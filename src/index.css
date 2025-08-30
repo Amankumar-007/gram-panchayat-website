@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@layer base {
+  :root{
+    --gov-blue:  #0d6efd; /* Info/links (DBIM suggests Blue for info) */
+    --gov-deep:  #111827; /* Neutral-900 text on white panels */
+    --gov-accent:#198754; /* Success/initiative highlight */
+    --gov-warn:  #ffc107; /* Mustard for warnings */
+  }
+}
