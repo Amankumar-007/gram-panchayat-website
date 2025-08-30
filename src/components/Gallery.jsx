@@ -1,4 +1,11 @@
 import { motion } from "framer-motion";
+import birdsImg from '../assets/birds.png';
+import busImg from '../assets/bus.png';
+import cctvImg from '../assets/cctv.png';
+import developmentImg from '../assets/development.png';
+import frontImg from '../assets/front.png';
+import girlImg from '../assets/girl.png';
+import roadImg from '../assets/road.png';
 
 const container = {
   hidden: { opacity: 0 },
@@ -21,13 +28,13 @@ const item = {
 };
 
 const galleryImages = [
-  { src: "/assets/birds.png", title: "Birds in Nature" },
-  { src: "/assets/bus.png", title: "City Bus" },
-  { src: "/assets/cctv.png", title: "Security Camera" },
-  { src: "/assets/development.png", title: "Development" },
-  { src: "/assets/front.png", title: "Front View" },
-  { src: "/assets/girl.png", title: "Portrait" },
-  { src: "/assets/road.png", title: "Scenic Road" },
+  { src: birdsImg, title: "Birds in Nature" },
+  { src: busImg, title: "City Bus" },
+  { src: cctvImg, title: "Security Camera" },
+  { src: developmentImg, title: "Development" },
+  { src: frontImg, title: "Front View" },
+  { src: girlImg, title: "Portrait" },
+  { src: roadImg, title: "Scenic Road" },
 ];
 
 export default function Gallery() {

@@ -1,6 +1,12 @@
 // src/components/Home.jsx
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import frontImg from '../assets/front.png';
+import cctvImg from '../assets/cctv.png';
+import roadImg from '../assets/road.png';
+import girlImg from '../assets/girl.png';
+import busImg from '../assets/bus.png';
+import birdsImg from '../assets/birds.png';
 
 const fade = { hidden:{opacity:0, y:16}, show:{opacity:1, y:0, transition:{duration:.5}} };
 
@@ -12,7 +18,7 @@ export default function Home(){
         <motion.img
           initial={{opacity:0, scale:.96}}
           animate={{opacity:1, scale:1, transition:{duration:.6}}}
-          src="/assets/front.png"
+          src={frontImg}
           alt="Village development works"
           className="rounded-2xl border border-slate-200 shadow-sm"
         />
@@ -35,7 +41,7 @@ export default function Home(){
       {/* 1. CCTV network (Left image, Right text) */}
       <section className="bg-blue-50/60 py-10">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 md:grid-cols-2">
-          <img src="/assets/cctv.png" alt="CCTV coverage" className="rounded-xl border border-blue-200"/>
+          <img src={cctvImg} alt="CCTV coverage" className="rounded-xl border border-blue-200"/>
           <div>
             <h2 className="text-2xl font-bold text-blue-900">35 CCTV cameras deployed</h2>
             <p className="mt-2 text-blue-900/80">
@@ -58,14 +64,14 @@ export default function Home(){
               The Longwala–Chak LGW road was upgraded with new surfacing, reducing distance to Hanumangarh district HQ by ~12 km. (PDF: “करीब 1 करोड़ 25 लाख रुपये… 12 किलोमीटर दूरी कम…”) 
             </p>
           </div>
-          <img src="/assets/road.png" alt="Road upgrades" className="order-1 rounded-xl border border-slate-200 shadow-sm md:order-2"/>
+          <img src={roadImg} alt="Road upgrades" className="order-1 rounded-xl border border-slate-200 shadow-sm md:order-2"/>
         </div>
       </section>
 
       {/* 3. Girls’ school classrooms (Left image, Right text) */}
       <section className="bg-emerald-50/60 py-10">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 md:grid-cols-2">
-          <img src="/assets/girl.png" alt="Girls school new rooms" className="rounded-xl border border-emerald-200"/>
+          <img src={girlImg} alt="Girls school new rooms" className="rounded-xl border border-emerald-200"/>
           <div>
             <h2 className="text-2xl font-bold text-emerald-900">Two new rooms for Girls’ School</h2>
             <p className="mt-2 text-emerald-900/80">
@@ -84,14 +90,14 @@ export default function Home(){
               The bus stand, designed to city standards, provides a welcoming public space and better commuter comfort. (PDF: “ये कोई शहर का नहीं बल्कि ग्राम पंचायत लोंगवाला का बस स्टैंड है…”) 
             </p>
           </div>
-          <img src="/assets/bus.png" alt="Bus stand" className="order-1 rounded-xl border border-slate-200 shadow-sm md:order-2"/>
+          <img src={busImg} alt="Bus stand" className="order-1 rounded-xl border border-slate-200 shadow-sm md:order-2"/>
         </div>
       </section>
 
       {/* 5. Cleanliness & bird-saving drive (Left image, Right text) */}
       <section className="bg-amber-50/60 py-10">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 md:grid-cols-2">
-          <img src="/assets/birds.png" alt="Cleanliness drive" className="rounded-xl border border-amber-200"/>
+          <img src={birdsImg} alt="Cleanliness drive" className="rounded-xl border border-amber-200"/>
           <div>
             <h2 className="text-2xl font-bold text-amber-900">Swachhta & Bird‑Saving Campaign</h2>
             <p className="mt-2 text-amber-900/80">
@@ -104,7 +110,7 @@ export default function Home(){
       {/* PDF snapshot callout */}
       <section className="mx-auto max-w-7xl px-4 py-12">
         <div className="grid items-center gap-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:grid-cols-2">
-          <img src="/assets/development.png" alt="PDF snapshot" className="rounded-xl border border-slate-200"/>
+          <img src="../assets/development.png" alt="PDF snapshot" className="rounded-xl border border-slate-200"/>
           <div>
             <h3 className="text-xl font-semibold">View PDF Highlights</h3>
             <p className="mt-2 text-slate-700">Visual summary exported from the reference PDF for transparency and archiving.</p>
